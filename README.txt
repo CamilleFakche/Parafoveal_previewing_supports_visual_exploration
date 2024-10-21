@@ -1,4 +1,4 @@
-The codes provided here allow to perform the main analyses (Figures 3, 4, and 5) from Fakche C., Hickey C., and Jensen O., (2024), Fast feature- and category-related parafoveal previewing support free visual exploration, The Journal of Neuroscience,  with Python 3.10.9. and MNE 1.0.3..
+The codes provided here allow to perform the main analyses (Figures 3, 4, and 5) from Fakche C., Hickey C., and Jensen O., (2024), Fast feature- and category-related parafoveal previewing support free visual exploration, The Journal of Neuroscience,  with Python 3.10.9. and MNE 1.0.3.
 
 RAW DATA
 Note that one participant has only 9 blocks and 270 trials. 
