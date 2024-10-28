@@ -17,49 +17,39 @@ Note that one participant has only 9 blocks and 270 trials.
 
 ## CODES
 
-- EyeData_Extraction.py
+#### EyeData_Extraction.py
   
 This code allows to transform the ASCII file into a numpy array with all eye events. 
 
-- EyeData_Epoch_Selection_MEG.py
+#### EyeData_Epoch_Selection_MEG.py
   
 This code allows to create a new stucture of MEG events, based on Eye Data, that will be used for Epoching. 
 
-- MEG_Preprocessing.py
+#### MEG_Preprocessing.py
   
-Step0: Compute Continuous Head Position 
+- Step0: Compute Continuous Head Position 
+- Step1: Low-Pass Filter 150 Hz, MaxFilter, tSSS, Movement compensation
+- Step2: Artifact Annotations
+- Step3: ICA
 
-Step1: Low-Pass Filter 150 Hz, MaxFilter, tSSS, Movement compensation
-
-Step2: Artifact Annotations
-
-Step3: ICA
-
-- MEG_Epoching.py
+#### MEG_Epoching.py
   
 This code allows to compute Epoch [-1; +1]s according to Foveal Fixation Onset, with the structure of MEG events created previously. 
 
-- MEG_Classification.py
+#### MEG_Classification.py
 
-This code allows to perform MVPA. 
-
-Step1: Select all sensors + Crop data [-0.5; +0.5]s
-
-Step2: Delay-Embedding
-
-Step3: Classification / Temporal Generalization with Supertrials 
-
+- Step1: Select all sensors + Crop data [-0.5; +0.5]s
+- Step2: Delay-Embedding
+- Step3: Classification / Temporal Generalization with Supertrials
+  
 (Linear Support Vector Machine, 10-fold cross-validation, Supertrial = 10 trials, 10 repetitions, Area Under the Curve, AUC)
 
-- MEG_Statistics_Figures.py
+#### MEG_Statistics_Figures.py
   
 This code allows to perform Figures 3, 4, and 5, with associated statistics.
 
-Classification: Figure + Permutation across times
+- Classification: Figure + Permutation across times
+- Temporal Generalization: Figure + Permutation across times*times
+- Foveal vs Parafoveal: Peak Latency Difference + Figure + T-test
 
-Temporal Generalization: Figure + Permutation across times*times
-
-Foveal vs Parafoveal: Peak Latency Difference + Figure + T-test 
-
-(Statistics Details reported in the Publication)
 
