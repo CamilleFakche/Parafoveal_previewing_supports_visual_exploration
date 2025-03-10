@@ -5,7 +5,7 @@ Fast feature- and category-related parafoveal previewing support free visual exp
 with Python 3.10.9. and MNE 1.0.3.
 
 ## RAW DATA
-The link with the raw data will be provided shortly. 
+https://doi.org/10.25500/edata.bham.00001170 
 - BEHAVIORAL DATA. There is one file per participant, ParticipantCode_BehavData_matrix.npy.
 - EYE DATA. There are 20 files per participant, one file per block (10 blocks) in EDF and in ASCII format, ParticipantCodebX.
 - IMAGES INFOS DATA. There are 10 files per participant, one file per block, ParticipantCode_ImageInfos_allTrials_blockX.npy.
